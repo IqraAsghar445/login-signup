@@ -1,0 +1,98 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #b1ac71; 
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #b4a481; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: rgb(56, 14, 14) !important;
+    font-style:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+h1 {
+    color: #2b281e;
+    text-align: center;
+    
+}
+
+.Recipies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.recipe-card {
+    background-color: rgba(177, 180, 160, 0.823);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+   
+    width: calc(25% - 30px);
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card h5 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.recipe-card span {
+    font-weight: bold;
+    color: #343a40;
+}
+
+
+.d-inline-block{
+    font-weight: bold;
+    font-display: rgb(127, 7, 7) !important;
+}
+
+.form-control{
+    border-radius: 15px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .recipe-card {
+        width: calc(50% - 30px); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .recipe-card {
+        width: calc(33.333% - 30px); 
+    }
+}
+
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
